@@ -7,6 +7,7 @@ import moduleEvent from './event/moduleEvent';
 import * as filters from './utils/filters';
 import components from './components'
 import fetch from './utils/fetch'
+import './plugins/element.js'
 
 Vue.config.productionTip = false
 
