@@ -1,8 +1,7 @@
-// import Layout from './layout'
+import Hamburger from './hamburger'
+import jsplumb from "./jsplumb"
 
-export default [
-    // {
-    //     name: 'Layout',
-    //     instance: Layout
-    // }
-]
+export default [{
+    name: 'Hamburger',
+    instance: Hamburger
+}, ...jsplumb]

@@ -1,14 +1,19 @@
+const webpack = require('webpack')
 const path = require('path');
 
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
 module.exports = {
-  configureWebpack: config => {
-    if (process.env.NODE_ENV === 'development') {
-      config.devtool = 'source-map'
-    }
+  configureWebpack: {
+    devtool: process.env.NODE_ENV === 'development' ? 'source-map' : 'cheap-module-source-map',
+    plugins: [
+      new webpack.ProvidePlugin({
+        _: 'lodash'
+      })
+    ]
   },
+  baseUrl: './',
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('src'))

@@ -9,8 +9,14 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.4.5",
+    "graphlib": "^2.1.5",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "jsplumb": "^2.8.4",
+    "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
     "storejs": "^1.0.20",
+    "uuid-js": "^0.7.5",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
