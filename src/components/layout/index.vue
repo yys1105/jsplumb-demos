@@ -23,7 +23,8 @@
 export default {
   data() {
     return {
-      isCollapse: false
+      isCollapse: false,
+      nodes:[]
     };
   },
   methods: {
