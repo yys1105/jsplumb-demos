@@ -81,7 +81,8 @@ export default {
     },
     clearAll() {
       this.$parent.allComponents.forEach(item => {
-        this.emptyNode(item.position.id);
+        jsPlumb.remove(item.position.id);
+        this.$parent.allComponents = []
       });
     },
     emptyNode(id) {
